@@ -1,0 +1,275 @@
+<svg width="1600" height="1200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <defs>
+      <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#1e3a5f;stop-opacity:1" />
+      </linearGradient>
+      
+      <linearGradient id="blockchainGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.3" />
+        <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:0.3" />
+        <stop offset="100%" style="stop-color:#ec4899;stop-opacity:0.3" />
+      </linearGradient>
+      
+      <filter id="glow">
+        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+        <feMerge>
+          <feMergeNode in="coloredBlur"/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+      
+      <filter id="shadow">
+        <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+      </filter>
+    </defs>
+    
+    <rect width="1600" height="1200" fill="url(#bgGradient)"/>
+    
+    <!-- Title Section -->
+    <text x="800" y="80" font-family="Arial, sans-serif" font-size="56" font-weight="bold" fill="#ffffff" text-anchor="middle">
+      Trade Finance Blockchain
+    </text>
+    <text x="800" y="130" font-family="Arial, sans-serif" font-size="28" fill="#94a3b8" text-anchor="middle">
+      Letter of Credit on Hyperledger Fabric
+    </text>
+    
+    <!-- Blockchain Network Layer -->
+    <rect x="100" y="180" width="1400" height="420" rx="15" fill="url(#blockchainGradient)" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+    
+    <text x="800" y="220" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">
+      Hyperledger Fabric Network
+    </text>
+    
+    <!-- Banking Institutions -->
+    <g id="banks">
+      <!-- Citibank -->
+      <g transform="translate(150, 260)">
+        <rect width="280" height="140" rx="10" fill="#1e40af" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+        <circle cx="50" cy="50" r="35" fill="#3b82f6" filter="url(#glow)"/>
+        <text x="50" y="58" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">🏦</text>
+        <text x="140" y="50" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#ffffff">Citibank</text>
+        <text x="140" y="75" font-family="Arial, sans-serif" font-size="14" fill="#94a3b8">Issuing Bank</text>
+        <text x="140" y="95" font-family="Arial, sans-serif" font-size="12" fill="#60a5fa">• LC Issuance</text>
+        <text x="140" y="115" font-family="Arial, sans-serif" font-size="12" fill="#60a5fa">• Payment Processing</text>
+      </g>
+      
+      <!-- HSBC -->
+      <g transform="translate(480, 260)">
+        <rect width="280" height="140" rx="10" fill="#1e40af" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+        <circle cx="50" cy="50" r="35" fill="#3b82f6" filter="url(#glow)"/>
+        <text x="50" y="58" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">🏦</text>
+        <text x="140" y="50" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#ffffff">HSBC</text>
+        <text x="140" y="75" font-family="Arial, sans-serif" font-size="14" fill="#94a3b8">Advising Bank</text>
+        <text x="140" y="95" font-family="Arial, sans-serif" font-size="12" fill="#60a5fa">• LC Advising</text>
+        <text x="140" y="115" font-family="Arial, sans-serif" font-size="12" fill="#60a5fa">• Document Verify</text>
+      </g>
+      
+      <!-- DBS -->
+      <g transform="translate(810, 260)">
+        <rect width="280" height="140" rx="10" fill="#1e40af" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+        <circle cx="50" cy="50" r="35" fill="#3b82f6" filter="url(#glow)"/>
+        <text x="50" y="58" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">🏦</text>
+        <text x="140" y="50" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#ffffff">DBS Bank</text>
+        <text x="140" y="75" font-family="Arial, sans-serif" font-size="14" fill="#94a3b8">Participating Bank</text>
+        <text x="140" y="95" font-family="Arial, sans-serif" font-size="12" fill="#60a5fa">• Trade Finance</text>
+        <text x="140" y="115" font-family="Arial, sans-serif" font-size="12" fill="#60a5fa">• Multi-party Ops</text>
+      </g>
+      
+      <!-- JPMorgan -->
+      <g transform="translate(1140, 260)">
+        <rect width="280" height="140" rx="10" fill="#1e40af" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+        <circle cx="50" cy="50" r="35" fill="#3b82f6" filter="url(#glow)"/>
+        <text x="50" y="58" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">🏦</text>
+        <text x="140" y="50" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#ffffff">JPMorgan</text>
+        <text x="140" y="75" font-family="Arial, sans-serif" font-size="14" fill="#94a3b8">Participating Bank</text>
+        <text x="140" y="95" font-family="Arial, sans-serif" font-size="12" fill="#60a5fa">• Trade Finance</text>
+        <text x="140" y="115" font-family="Arial, sans-serif" font-size="12" fill="#60a5fa">• Settlement</text>
+      </g>
+    </g>
+    
+    <!-- Shipping & Logistics -->
+    <g id="shipping">
+      <!-- Maersk -->
+      <g transform="translate(220, 440)">
+        <rect width="240" height="120" rx="10" fill="#7c3aed" stroke="#a78bfa" stroke-width="2" filter="url(#shadow)"/>
+        <circle cx="40" cy="40" r="30" fill="#8b5cf6" filter="url(#glow)"/>
+        <text x="40" y="48" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">🚢</text>
+        <text x="120" y="45" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#ffffff">Maersk</text>
+        <text x="120" y="70" font-family="Arial, sans-serif" font-size="12" fill="#c4b5fd">Shipping Company</text>
+        <text x="120" y="90" font-family="Arial, sans-serif" font-size="11" fill="#a78bfa">• Document Submit</text>
+        <text x="120" y="105" font-family="Arial, sans-serif" font-size="11" fill="#a78bfa">• Cargo Tracking</text>
+      </g>
+      
+      <!-- CMA CGM -->
+      <g transform="translate(520, 440)">
+        <rect width="240" height="120" rx="10" fill="#7c3aed" stroke="#a78bfa" stroke-width="2" filter="url(#shadow)"/>
+        <circle cx="40" cy="40" r="30" fill="#8b5cf6" filter="url(#glow)"/>
+        <text x="40" y="48" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">🚢</text>
+        <text x="120" y="45" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#ffffff">CMA CGM</text>
+        <text x="120" y="70" font-family="Arial, sans-serif" font-size="12" fill="#c4b5fd">Shipping Company</text>
+        <text x="120" y="90" font-family="Arial, sans-serif" font-size="11" fill="#a78bfa">• Bill of Lading</text>
+        <text x="120" y="105" font-family="Arial, sans-serif" font-size="11" fill="#a78bfa">• Logistics</text>
+      </g>
+    </g>
+    
+    <!-- Regulatory Bodies -->
+    <g id="regulators">
+      <!-- RBI -->
+      <g transform="translate(900, 440)">
+        <rect width="240" height="120" rx="10" fill="#db2777" stroke="#f472b6" stroke-width="2" filter="url(#shadow)"/>
+        <circle cx="40" cy="40" r="30" fill="#ec4899" filter="url(#glow)"/>
+        <text x="40" y="48" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">⚖️</text>
+        <text x="120" y="45" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#ffffff">RBI</text>
+        <text x="120" y="70" font-family="Arial, sans-serif" font-size="12" fill="#fecdd3">Reserve Bank of India</text>
+        <text x="120" y="90" font-family="Arial, sans-serif" font-size="11" fill="#f9a8d4">• Compliance</text>
+        <text x="120" y="105" font-family="Arial, sans-serif" font-size="11" fill="#f9a8d4">• Customs Clearance</text>
+      </g>
+      
+      <!-- FCA -->
+      <g transform="translate(1180, 440)">
+        <rect width="240" height="120" rx="10" fill="#db2777" stroke="#f472b6" stroke-width="2" filter="url(#shadow)"/>
+        <circle cx="40" cy="40" r="30" fill="#ec4899" filter="url(#glow)"/>
+        <text x="40" y="48" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">⚖️</text>
+        <text x="120" y="45" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#ffffff">FCA</text>
+        <text x="120" y="70" font-family="Arial, sans-serif" font-size="12" fill="#fecdd3">Financial Conduct Authority</text>
+        <text x="120" y="90" font-family="Arial, sans-serif" font-size="11" fill="#f9a8d4">• Regulation</text>
+        <text x="120" y="105" font-family="Arial, sans-serif" font-size="11" fill="#f9a8d4">• Oversight</text>
+      </g>
+    </g>
+    
+    <!-- LC Workflow -->
+    <g id="workflow">
+      <rect x="100" y="640" width="1400" height="320" rx="15" fill="#1e293b" stroke="#475569" stroke-width="2" filter="url(#shadow)"/>
+      
+      <text x="800" y="680" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">
+        Letter of Credit Workflow
+      </text>
+      
+      <!-- Workflow Steps -->
+      <g id="step1" transform="translate(150, 720)">
+        <circle cx="60" cy="60" r="50" fill="#3b82f6" stroke="#60a5fa" stroke-width="3" filter="url(#glow)"/>
+        <text x="60" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+        <text x="60" y="75" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">LC</text>
+        <text x="60" y="90" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">Issuance</text>
+        <text x="60" y="155" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Bank creates</text>
+        <text x="60" y="170" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">LC request</text>
+      </g>
+      
+      <!-- Arrow -->
+      <path d="M 280 780 L 340 780" stroke="#60a5fa" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+      
+      <g id="step2" transform="translate(350, 720)">
+        <circle cx="60" cy="60" r="50" fill="#8b5cf6" stroke="#a78bfa" stroke-width="3" filter="url(#glow)"/>
+        <text x="60" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">2</text>
+        <text x="60" y="75" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">LC</text>
+        <text x="60" y="90" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">Acceptance</text>
+        <text x="60" y="155" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Beneficiary</text>
+        <text x="60" y="170" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">reviews terms</text>
+      </g>
+      
+      <path d="M 480 780 L 540 780" stroke="#a78bfa" stroke-width="3" fill="none" marker-end="url(#arrowhead2)"/>
+      
+      <g id="step3" transform="translate(550, 720)">
+        <circle cx="60" cy="60" r="50" fill="#ec4899" stroke="#f472b6" stroke-width="3" filter="url(#glow)"/>
+        <text x="60" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">3</text>
+        <text x="60" y="75" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">Goods</text>
+        <text x="60" y="90" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">Shipment</text>
+        <text x="60" y="155" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Shipping</text>
+        <text x="60" y="170" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">company logs</text>
+      </g>
+      
+      <path d="M 680 780 L 740 780" stroke="#f472b6" stroke-width="3" fill="none" marker-end="url(#arrowhead3)"/>
+      
+      <g id="step4" transform="translate(750, 720)">
+        <circle cx="60" cy="60" r="50" fill="#06b6d4" stroke="#67e8f9" stroke-width="3" filter="url(#glow)"/>
+        <text x="60" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">4</text>
+        <text x="60" y="75" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">Document</text>
+        <text x="60" y="90" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">Submit</text>
+        <text x="60" y="155" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Documents</text>
+        <text x="60" y="170" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">uploaded</text>
+      </g>
+      
+      <path d="M 880 780 L 940 780" stroke="#67e8f9" stroke-width="3" fill="none" marker-end="url(#arrowhead4)"/>
+      
+      <g id="step5" transform="translate(950, 720)">
+        <circle cx="60" cy="60" r="50" fill="#f59e0b" stroke="#fbbf24" stroke-width="3" filter="url(#glow)"/>
+        <text x="60" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">5</text>
+        <text x="60" y="75" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">Customs</text>
+        <text x="60" y="90" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">Clearance</text>
+        <text x="60" y="155" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Regulatory</text>
+        <text x="60" y="170" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">approval</text>
+      </g>
+      
+      <path d="M 1080 780 L 1140 780" stroke="#fbbf24" stroke-width="3" fill="none" marker-end="url(#arrowhead5)"/>
+      
+      <g id="step6" transform="translate(1150, 720)">
+        <circle cx="60" cy="60" r="50" fill="#10b981" stroke="#34d399" stroke-width="3" filter="url(#glow)"/>
+        <text x="60" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">6</text>
+        <text x="60" y="75" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">Payment</text>
+        <text x="60" y="90" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">Release</text>
+        <text x="60" y="155" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Funds</text>
+        <text x="60" y="170" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">transferred</text>
+      </g>
+    </g>
+    
+    <!-- Arrow markers -->
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+        <polygon points="0 0, 10 3, 0 6" fill="#60a5fa" />
+      </marker>
+      <marker id="arrowhead2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+        <polygon points="0 0, 10 3, 0 6" fill="#a78bfa" />
+      </marker>
+      <marker id="arrowhead3" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+        <polygon points="0 0, 10 3, 0 6" fill="#f472b6" />
+      </marker>
+      <marker id="arrowhead4" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+        <polygon points="0 0, 10 3, 0 6" fill="#67e8f9" />
+      </marker>
+      <marker id="arrowhead5" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+        <polygon points="0 0, 10 3, 0 6" fill="#fbbf24" />
+      </marker>
+    </defs>
+    
+    <!-- Technology Stack -->
+    <g id="tech-stack">
+      <rect x="100" y="1000" width="1400" height="160" rx="15" fill="#0f172a" stroke="#334155" stroke-width="2" filter="url(#shadow)"/>
+      
+      <text x="800" y="1040" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">
+        Technology Stack
+      </text>
+      
+      <!-- Tech icons and labels -->
+      <g transform="translate(200, 1070)">
+        <rect width="180" height="70" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+        <text x="90" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#60a5fa" text-anchor="middle">Hyperledger</text>
+        <text x="90" y="50" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#60a5fa" text-anchor="middle">Fabric 2.3+</text>
+      </g>
+      
+      <g transform="translate(420, 1070)">
+        <rect width="180" height="70" rx="8" fill="#1e293b" stroke="#8b5cf6" stroke-width="2"/>
+        <text x="90" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#a78bfa" text-anchor="middle">Node.js</text>
+        <text x="90" y="50" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#a78bfa" text-anchor="middle">Chaincode</text>
+      </g>
+      
+      <g transform="translate(640, 1070)">
+        <rect width="180" height="70" rx="8" fill="#1e293b" stroke="#ec4899" stroke-width="2"/>
+        <text x="90" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#f472b6" text-anchor="middle">Express.js</text>
+        <text x="90" y="50" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#f472b6" text-anchor="middle">REST API</text>
+      </g>
+      
+      <g transform="translate(860, 1070)">
+        <rect width="180" height="70" rx="8" fill="#1e293b" stroke="#06b6d4" stroke-width="2"/>
+        <text x="90" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#67e8f9" text-anchor="middle">React.js +</text>
+        <text x="90" y="50" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#67e8f9" text-anchor="middle">Tailwind CSS</text>
+      </g>
+      
+      <g transform="translate(1080, 1070)">
+        <rect width="180" height="70" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+        <text x="90" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#34d399" text-anchor="middle">Docker +</text>
+        <text x="90" y="50" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#34d399" text-anchor="middle">PostgreSQL</text>
+      </g>
+    </g>
+  </svg>
