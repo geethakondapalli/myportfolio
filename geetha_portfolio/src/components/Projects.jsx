@@ -8,7 +8,7 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Menu Ordering System - Home Based Kitchen",
+      title: " Order Management - Home Based Kitchen",
       description: "A comprehensive full-stack application for restaurant menu management and online ordering with scheduled menus, combo deals, and payment integration.",
       longDescription: "Built a feature-rich ordering platform that enables customers to browse scheduled menus, create custom orders, and complete payments online or offline. The system includes menu scheduling, combo deal management, customer information collection, and pickup/delivery options.",
       image: "/images/demo_cateroncloud_thumbnail.png",
@@ -27,12 +27,14 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "Trade Finance on Hyperledger Fabric",
+      title: "Letter of Credit Lifecycle on Hyperledger Fabric",
       description: "Built a blockchain-based LC system on Hyperledger Fabric connecting banks, shipping companies, and customs on a shared ledger for secure trade finance.",
       longDescription: "Developed a decentralized Letter of Credit (LC) system using Hyperledger Fabric to streamline trade finance processes. The application connects multiple stakeholders including banks, shipping companies, and customs authorities on a shared ledger, ensuring transparency and security in transactions.",
       image: "/images/LC_flow.png",
       technologies: [ "Hyperledger Fabric", "Smart Contracts/Chaincode"],
       features: [
+        "Multi-organization network setup",
+        "Smart contract development for LC processes",
         "Handling LC applications and approvals",
         "Document submission",
         "Verification Workflows",
