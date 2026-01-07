@@ -3,7 +3,7 @@ import '../css/Projects.css';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
-  const [showVideo, setShowVideo] = useState(false);
+
 
   const projects = [
     {
